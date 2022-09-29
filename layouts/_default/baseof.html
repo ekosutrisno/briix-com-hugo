@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+        <div>
+            <main>
+                {{- partial "widget.html" . -}}
+
+                {{/*  Main bisa diganti dengan page lain (Aku belum pernah coba yang multiple pages si.. hehe)  */}}
+                {{- partial "main.html" . -}}
+
+                {{- partial "contact.html" . -}}
+                {{- partial "footer.html" . -}}
+            </main>
+
+        </div>
+        
+        {{- partial "script.html" . -}}
+    </body>
+</html>
